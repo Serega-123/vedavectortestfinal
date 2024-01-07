@@ -1650,6 +1650,9 @@ input.input-at:focus {
     .btn{
         display: flex;
     }
+    .header__link-tg img{
+        display: none;
+    }
     .header__list{
         align-items: center;
         flex-direction: column;
@@ -1657,23 +1660,33 @@ input.input-at:focus {
         padding-left: 30px;
         width: 100%;
         height: 100vh;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(255, 255, 255, 0.8);
         position: fixed;
         left: -100%;
         top: 94px;
         z-index: 50;
         transition: 0.5s ease-in-out;
     }
+
     .header__link{
-        padding: 5px 0; 
-        margin-left: 0;
+        display: inline-block;
+        /* padding: 5px 0;  */
+       margin: 3px 0;
     }
     .header__link-login {
         margin-left:0;
     }
     .header__link-sign {
+        display: inline-block;
         margin-left: 0;
-        
+        margin-top: 5px;   
+    }
+    .connect__descr {
+        width: auto;
+    }
+    .list__services {
+        display: flex;
+        flex-direction: column;
     }
     #check:checked ~ .header__list{left: 0;}
 
