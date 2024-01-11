@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VedaVector</title>
-   
-    <link rel="icon" href="images/logo.svg">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="images/vedavector-logo.png">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="style/style.css">
 </head>
@@ -18,6 +18,7 @@
             <div class="header__nav">
                 <a href="" class="logo">
                     <img src="images/vedavector-logo.png" alt="">
+                    <img src="images/iiko-service-black.png" alt="" class="iiko__service">
                 </a>
                 <input type="checkbox" id="check">
                 <ul class="header__list">
@@ -26,7 +27,8 @@
                     <li><a href="pricing.html" class="header__link">Тарифы</a></li>
                     <li><a href="blog.html" class="header__link">Социальные сети</a></li>
 
-                    <li><a href="https://t.me/VV_siroj" class="header__link-tg"><img src="images/telegram-logo.png" alt=""></a></li>
+                    <li><a href="https://t.me/VV_siroj" class="header__link-tg"><img src="images/telegram-logo.png"
+                                alt=""></a></li>
                     <li><a href="tel:+99899990009" class="header__link-sign">Связаться с нами</a></li>
                     <!-- <li><a href="login.html" class="header__link-login">Login</a></li>
                     <li><a href="sign.html" class="header__link-sign">Sign Up</a></li> -->
@@ -38,20 +40,54 @@
         </div>
     </header>
     <main class="main">
+        <!-- ---------- скопировано ----------------------- -->
+        <div class="slideshow-container">
+            <div class="mySlides fade bg1">
+              <h3 class="text">Что такое iiko?</h3>
+              <div class="slayder__line-bottom"></div>
+              <p class="slider__descr">Автоматизация ресторанов баров кафе</p>
+              <a href="#iiko"><span class="slider__bottom">Подробнее</span></a>
+            </div> <!-- .mySlides -->
+          
+            <div class="mySlides fade bg2">
+              <h3 class="text">Наши Услуги</h3>
+              <div class="slayder__line-bottom"></div>
+              <p class="slider__descr">Контролируйте цифры своего бизнеса с VedaVector</p>
+              <a href="#service"><span class="slider__bottom">Подробнее</span></a>
+            </div> <!-- .mySlides -->
+          
+            <div class="mySlides fade bg3">
+              <h3 class="text">Наши Тарифы</h3>
+              <div class="slayder__line-bottom"></div>
+              <p class="slider__descr">Контролируйте цифры своего бизнеса с VedaVector</p>
+              <a href="#tarif"><span class="slider__bottom">Подробнее</span></a>
+            </div> <!-- .mySlides -->
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div> <!-- .slideshow-container -->
+
         <div class="container">
             <div class="own__audience">
-                <img src="images/vedavector-logo.png" alt="" class="logo__title">
-                <p class="own__descr">Автоматизация ресторанов баров кафе</p>
-                <img src="images/iiko-service-black.png" alt="" class="iiko__service">
+                <!-- <img src="images/vedavector-logo.png" alt="" class="logo__title"> -->
+                <!-- <p class="own__descr">Автоматизация ресторанов баров кафе</p> -->
+                <!-- <img src="images/iiko-service-black.png" alt="" class="iiko__service"> -->
             </div>
-            <div class="connect__content">
-                <span class="step__1">STEP 1</span>
-                <h3 class="connect__title">Connect Your Content</h3>
-                <p class="connect__descr">Bring all of your content together and get a Homepage that
-                    automatically updates whenever you create anywhere online.</p>
-                <a href="#" class="connect__button">View Avaliable Sources</a>
+            <div class="connect__content" id="iiko">
+                <!-- <span class="step__1">STEP 1</span> -->
+                <h3 class="connect__title">Что такое <span>iiko</span>?</h3>
+                <p class="connect__descr"><span>iiko </span> - специализированная система планирования ресурсов
+                    предприятия, предназначенная для автоматизации учета в ресторане, а также в кафе, баре, службе
+                    доставки готовых блюд.<br>
+
+                    <br>В этой программе в одно целое собрано все: касса, склад, персонал, мотивация, кухня, финансы,
+                    отчетность – удобно управлять в режиме единого окна.<br>
+
+                    <br>Прежде всего система предназначена для управляющих, для владельцев бизнеса, так как предоставляет
+                    широкий функционал и обширный набор инструментов для ведения бизнеса. </p>
+                <!-- <a href="#" class="connect__button">View Avaliable Sources</a> -->
             </div>
-            <div class="share__homepage">
+            <!-- <div class="share__homepage">
                 <span class="step__2">STEP 2</span>
                 <h3 class="share__title">Share Your Homepage</h3>
                 <p class="share__descr">Share your Wavium homepage link with your followers, and
@@ -59,13 +95,15 @@
             </div>
             <div class="right__button">
                 <a href="#" class="right__link">Get Started Now</a>
-            </div>
-            <div class="group__services">
+            </div> -->
+            <div class="group__services" id="service">
                 <h3 class="service__title-h">Услуги</h3>
                 <div class="list__services">
                     <a href="#"><img src="images/img-1.jpg" alt="" class="service__photo"></a>
                     <div class="service__info">
-                        <a href="#"><h3 class="service__title">Внедрение iiko</h3></a>
+                        <a href="#">
+                            <h3 class="service__title">Внедрение iiko</h3>
+                        </a>
                         <p class="service__descr">Специализируемся на автоматизации общепита с 2014 года. Мы знаем, чем
                             отличается учет в столовой от учета в ресторане. Знаем как ворует персонал и как не потерять
                             ни 1 грамма при инвентаризации. Поможем организовать работу заведения максимально эффективно
@@ -77,7 +115,9 @@
                 <div class="list__services">
                     <a href="#"><img src="images/img-2.jpg" alt="" class="service__photo"></a>
                     <div class="service__info">
-                        <a href="#"><h3 class="service__title">Обучение iiko</h3></a>
+                        <a href="#">
+                            <h3 class="service__title">Обучение iiko</h3>
+                        </a>
                         <p class="service__descr">Обучение пользователей – залог успешного запуска системы iiko и
                             ведения полного управленческого учета предприятия.</p>
                         <a href="#"><span class="service__span">Подробнее</span></a>
@@ -86,7 +126,9 @@
                 <div class="list__services">
                     <a href="#"><img src="images/img-3.jpg" alt="" class="service__photo"></a>
                     <div class="service__info">
-                        <a href="#"><h3 class="service__title">Идеальный учет в iiko</h3></a>
+                        <a href="#">
+                            <h3 class="service__title">Идеальный учет в iiko</h3>
+                        </a>
                         <p class="service__descr">После аудита складского учета возникает потребность исправить
                             неполадки. Вы можете сделать это самостоятельно, а можете доверить это профессионалам
                             Денвик. Поможем настроить складской учет так, как он должен вестись для эффективного
@@ -97,7 +139,9 @@
                 <div class="list__services">
                     <a href="#"><img src="images/img-4.jpg" alt="" class="service__photo"></a>
                     <div class="service__info">
-                        <a href="#"><h3 class="service__title">Стать партнером VedaVector</h3></a>
+                        <a href="#">
+                            <h3 class="service__title">Стать партнером VedaVector</h3>
+                        </a>
                         <p class="service__descr">В рамках расширения регионов присутствия мы предоставляем нашим
                             партнерам высокий уровень агентского и дилерского вознаграждения, консультации и
                             сопровождение на любом этапе - от сделки, до внедрения.</p>
@@ -107,7 +151,9 @@
                 <div class="list__services">
                     <a href="#"><img src="images/img-5.jpg" alt="" class="service__photo"></a>
                     <div class="service__info">
-                        <a href="#"><h3 class="service__title">Аутсорсинг складского учета в iiko для общепита</h3></a>
+                        <a href="#">
+                            <h3 class="service__title">Аутсорсинг складского учета в iiko для общепита</h3>
+                        </a>
                         <p class="service__descr">С iiko вы можете лучше управлять запасами и контролировать
                             себестоимость блюд, но для получения корректных данных важно правильно вести складской учет.
                             Мы предлагаем передать ведение учета профессионалам, которые знают, как максимально
@@ -118,7 +164,9 @@
                 <div class="list__services">
                     <a href="#"><img src="images/img-6.jpg" alt="" class="service__photo"></a>
                     <div class="service__info">
-                        <a href="#"><h3 class="service__title">Техническая поддержка iiko</h3></a>
+                        <a href="#">
+                            <h3 class="service__title">Техническая поддержка iiko</h3>
+                        </a>
                         <p class="service__descr">Нужна качественная поддержка iiko? Устали от сервиса других компаний?
                             Оставь заявку - справимся с задачами любой сложности.</p>
                         <a href="#"><span class="service__span">Подробнее</span></a>
@@ -155,6 +203,7 @@
                 </div>
 
             </div>
+            <h3 class="pricing__title-home" id="tarif">Тарифы</h3>
             <div class="pricing__group">
                 <div class="pricing__list">
                     <h3 class="list__title">iikoCloud Start</h3>
@@ -260,6 +309,14 @@
                     <a href="#" class="footer__logotype"><img src="images/vedavector-logo.png" alt=""></a>
                     <a href="mailto:info@marico.co" class="footer__email">info@VedaVector.co</a>
                 </div>
+                <div class="footer__icons">
+                    <a href="https://t.me/VV_siroj"><img src="images/telegram-logo.png" alt="" class="icon__list"></a>
+                    <a href="https://www.instagram.com/"><img src="images/Instagram_logo.svg" alt=""
+                            class="icon__list"></a>
+                    <a href="https://www.facebook.com/"><img src="images/facebook bg.svg" alt="" class="icon__list"></a>
+                    <a href="https://twitter.com/?lang=ru"><img src="images/Twitter_logo.svg" alt=""
+                            class="icon__list"></a>
+                </div>
                 <div class="footer__link">
                     <ul class="footer__list">
                         <li><a href="about.html" class="footer__link-n">О нас</a></li>
@@ -273,6 +330,7 @@
     </footer>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+    <script src="app.js"></script>
     <script src="snowfall.js"></script>
     <script>
         $(document).ready(function () {
