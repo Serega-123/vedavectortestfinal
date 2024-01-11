@@ -1766,9 +1766,9 @@ input.input-at:focus {
     .list__button {
         padding: 0 60px;
     }
-    .pricing__list {
-        h
-    }
+    /* .pricing__list {
+        
+    } */
     .list__updating {
         font-size: 10px;
     }
