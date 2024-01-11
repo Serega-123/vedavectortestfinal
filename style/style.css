@@ -130,7 +130,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 90px;
 }
 .step__1 {
     color: #3D82F2;
@@ -622,7 +622,7 @@ body {
     font-size: 45px;
     font-weight: 500;
     line-height: 30px;
-    margin-top: 100px;
+    margin-top: 50px;
     text-align: center;
 }
 .pricing__group {
@@ -1308,7 +1308,7 @@ input.input-at:focus {
     gap: 20px;
     max-width: 1099px;
     width: 100%;
-    margin: 100px 0 150px;
+    margin: 40px 0 150px;
 
 }
 .blog__list {
@@ -1739,6 +1739,60 @@ input.input-at:focus {
        display: flex;
        justify-content: center;
        align-items: center;
+    }
+}
+@media(max-width: 300px) {
+    .footer__list {
+        display: none;
+    }
+    .footer__navigate {
+        display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+    }
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slider__descr {
+        width: 150px;
+        text-align: center;
+        font-size: 18px !important;
+    }
+    .list__button {
+        padding: 0 60px;
+    }
+    .pricing__list {
+        h
+    }
+    .list__updating {
+        font-size: 10px;
+    }
+    .list__dollar {
+        margin: 0;
+    }
+    .list__updating-mar2 {
+       margin-bottom: 90px;
+    }
+    .our__title {
+        font-size: 30px;
+        width: auto;
+    }
+    .our__descr {
+        width: auto;
+    }
+    .about__line {
+        width: 250px;
+    }
+    .info__people {
+        flex-direction: column;
+    }
+    .blog__title {
+        font-size: 40px;
     }
 }
 
